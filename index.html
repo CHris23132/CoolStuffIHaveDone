@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Walsh - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 40px auto;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #666;
+            font-size: 1.8em;
+            font-weight: normal;
+            margin-top: 0;
+        }
+
+        .section {
+            margin: 60px 0;
+            padding: 20px;
+        }
+
+        .section-title {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            text-align: left;
+        }
+
+        .app-image {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .app-content {
+            flex: 1;
+        }
+
+        .app-title {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .app-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .app-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .app-image {
+                width: 150px;
+            }
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            margin: 20px 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .large-project-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <img src="images/chris.jpeg" alt="Christopher Walsh" class="profile-image">
+    <h1>Christopher Walsh</h1>
+    <h2>Cool stuff I have done</h2>
+
+    <section class="section">
+        <h2 class="section-title">iOS Apps</h2>
+        
+        <div class="app-card">
+            <img src="images/3 iOS Apps Released and One MacOS App in Stores Now (2).png" alt="Margaret App" class="app-image">
+            <div class="app-content">
+                <h3 class="app-title">Margaret</h3>
+                <p class="app-description">
+                    An all-in-one tool for SMB owners to track expenses, income, calculate taxes, write quotes, invoices and marketing with your saved inventory and products.
+                </p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <img src="images/Walapy-news (1).png" alt="Walapy App" class="app-image">
+            <div class="app-content">
+                <h3 class="app-title">Walapy</h3>
+                <p class="app-description">
+                    A innovative app that makes the news experience great. Summarize real and up to date articles from available big data and present it with the help of AI and natural language models to summarize the news in a concise and readable manner.
+                </p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <img src="images/Untitled design (58).png" alt="AR Stop Motion App" class="app-image">
+            <div class="app-content">
+                <h3 class="app-title">AR Stop Motion</h3>
+                <p class="app-description">
+                    AR stop motion is an application using cutting edge augmented reality technology based on my childhood passion of making stop motion movies with a small DVD camera. Inspired by 3-D engines like blender, the world is your viewport as you drag and drop place objects and characters pre-prepared ready to make awesome scenes anywhere. Create 3-D movies and VFX shots on an iPhone - anyone can do it.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Published Books</h2>
+        
+        <div class="book-card app-card">
+            <img src="images/61jPDHTe9SL._SL1500_.jpg" alt="Robbery at the Royal Book Cover" class="book-image app-image">
+            <div class="app-content">
+                <h3 class="app-title">Robbery at the Royal</h3>
+                <p class="app-description">
+                    A mystery novel about a group of creative and skilled former special operatives turned robbers who get themselves involved in high stakes robberies leading them to plan and execute the robbery of the Royal Ontario museum.
+                </p>
+            </div>
+        </div>
+
+        <div class="book-card app-card">
+            <img src="images/51QRK4hv29L._SL1500_.jpg" alt="Just a Glance Book Cover" class="book-image app-image">
+            <div class="app-content">
+                <h3 class="app-title">Just a Glance</h3>
+                <p class="app-description">
+                    A romance novel, based around the idea that a glance can lead to so much more, and that our eyes carry a power that can say a lot more than words can justify.
+                </p>
+            </div>
+        </div>
+
+        <div class="book-card app-card">
+            <img src="images/61Qpmv4nRDL._SL1376_.jpg" alt="Marvin's Magic Rink Book Cover" class="book-image app-image">
+            <div class="app-content">
+                <h3 class="app-title">Marvin's Magic Rink</h3>
+                <p class="app-description">
+                    Marvin's magic rink is an amazing story about a boy who lives out in the country far away from all his friends at school and far away from the local rink. Inspired by his desire to improve at the game of hockey, his dad decides to build a rink one year. With both his parents busy and his friends so far away he never really had anyone to play with until one magical night, where the snowman and scarecrow come to life to play a magical game. The story also uses augmented reality to animate each page and illustration of the book.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">macOS Apps</h2>
+        
+        <div class="app-card">
+            <img src="images/Make-Apps.png" alt="Make Apps" class="app-image">
+            <div class="app-content">
+                <h3 class="app-title">Make Apps</h3>
+                <p class="app-description">
+                    Make Apps is an app that allows anyone to get into the world of design and app building with three main features. The canvas for planning out your app with graphics, and the prompt builder section that can help you build prompts that help you explain your idea in a structured way, helping out with terminology and correct structure of an app.
+                </p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <img src="images/Podcast-producer-image.png" alt="Podcast Producer" class="app-image">
+            <div class="app-content">
+                <h3 class="app-title">Podcast Producer</h3>
+                <p class="app-description">
+                    Podcast Producer democratizes production value by allowing users to pre-prepare all of their shows by entering their topics, notes, and descriptions as well as assign allocated time to each segment to ensure their show stays on task and covers all topics. When doing the show, open up the app and with the rundown style interface, you have all the information at the ready with a reminder of the time. The AI producer can help fetch articles relevant to your heading and description for your topic segment, feeding talking points just like a real producer would when they feed talent information.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">3D Animated Short Film</h2>
+        
+        <div class="app-card">
+            <div class="app-content">
+                <h3 class="app-title">Samurai Gem</h3>
+                <p class="app-description">
+                    Animated short film made in blender. This blender short film showcases time spent learning 3D software, creating a well-lit, well-animated, and well put together scene where everything was built and prepared in 3D space using Blender 3D.
+                </p>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/fgMnbz3WvPE?si=_vS433y606ztgDtj" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Creative Fundraise</h2>
+        
+        <div class="app-card">
+            <div class="app-content">
+                <h3 class="app-title">SickKids Hospital Fundraising Success - 2011</h3>
+                <p class="app-description">
+                    At age 11, I participated in a fundraising initiative for SickKids Hospital at a local Walmart. Initially facing challenges with traditional fundraising methods, I innovatively transformed our approach by creating an engaging musical experience. I began singing and drumming on the bollards with a catchy jingle:
+                </p>
+                <blockquote style="
+                    font-style: italic;
+                    margin: 20px 0;
+                    padding: 15px;
+                    border-left: 4px solid #4CAF50;
+                    background-color: #f9f9f9;
+                ">
+                    "Donate to the sick kids hospital, and the Aurora jays.<br>
+                    Every penny counts enjoy your day"
+                </blockquote>
+                <p class="app-description">
+                    This creative approach dramatically improved our success rate, transforming from a 99% rejection rate to engaging over 50% of shoppers. By streamlining the donation process with a direct collection container, we achieved near-universal participation from passing shoppers. The initiative culminated in breaking the record for single-day collections at that store location, all accomplished in just a few hours through the power of music and positive energy.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">3D Design Project</h2>
+        
+        <div class="app-card">
+            <div class="app-content">
+                <h3 class="app-title">Fingerboard Ramps</h3>
+                <img src="images/3dprint-ramp.png" alt="3D Printed Fingerboard Ramps" class="large-project-image">
+                <p class="app-description">
+                    3D printed fingerboard ramps made for tech deck and fingerboard toys. Although I had experience creating movie scenes in Blender, designing a functional product was a different challenge entirely. It took many iterations learning how to work with a 3D printer, as well as learning how to optimize designs for successful prints. The process involved constant testing: What worked? What didn't? If the product broke during use, why did it break? How could I add supports? How could I design it in a more efficient and stable way?
+                </p>
+                <p class="app-description">
+                    While the total adjustable market for this product wasn't huge, the high number of iterations taught me valuable lessons about product design, structural integrity, and the practical applications of 3D printing technology.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
